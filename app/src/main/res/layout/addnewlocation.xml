@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:layout_weight="0.37">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="left|center">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="20dp"
+                android:text="@string/TVLocLat"
+                android:id="@+id/TVLocLattxt"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/YellowColortxt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="20dp"
+                android:id="@+id/tvLocLat"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/YellowColortxt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="20dp"
+                android:text="@string/TVLocLng"
+                android:id="@+id/textView6"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/YellowColortxt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="20dp"
+                android:id="@+id/tvLocLng"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/YellowColortxt"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="154dp"
+                android:layout_height="wrap_content"
+                android:text="New Text"
+                android:id="@+id/textView5" />
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="إلتقاط صورة"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:id="@+id/btCaptureImg"
+                android:onClick="luanchCamera"
+                android:textSize="20dp"
+                android:textColor="@color/YellowColortxt"
+                android:background="#0826ff"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/TVLocImage"
+            android:adjustViewBounds="false"
+            android:background="@android:color/holo_green_light"
+            android:layout_margin="1dp"
+            android:minWidth="400dp"
+            android:minHeight="250dp"
+            android:maxHeight="250dp"
+            android:maxWidth="400dp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:text="@string/TVLocName"
+        android:id="@+id/tvlocname"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@color/YellowColortxt"
+        android:textStyle="bold"
+        android:layout_marginRight="10dp" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:id="@+id/TELocname"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_weight="0"
+        android:background="@color/GreenBack"
+        android:inputType="text" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:text="@string/TVLocTel"
+        android:id="@+id/tvloctel"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@color/YellowColortxt"
+        android:textStyle="bold"
+        android:layout_marginRight="10dp" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:id="@+id/TEloctel"
+        android:background="@color/GreenBack"
+        android:inputType="text"
+        android:elegantTextHeight="false" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:text="@string/TVLocCatId"
+        android:id="@+id/tcloccatid"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="@color/YellowColortxt"
+        android:textStyle="bold"
+        android:layout_marginRight="10dp" />
+
+    <Spinner
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:id="@+id/spinLocCategory"
+        android:layout_below="@+id/tvSpinner"
+        android:layout_alignParentLeft="true"
+        android:spinnerMode="dropdown"
+        android:background="@color/GreenBack" />
+
+    <Button
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btAddNewLoc"
+        android:id="@+id/btAddNewLoc"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:onClick="GoAddNewLoc"
+        android:background="#0826ff"
+        android:textColor="@color/YellowColortxt" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:layout_gravity="right"
+        android:layout_weight="0.37" />
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="30dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/TVUserName"
+        android:id="@+id/tvUserName"
+        android:autoText="false"
+        android:textColor="@android:color/primary_text_dark"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textStyle="bold"
+        android:layout_gravity="bottom"
+        android:background="@color/StatusColor" />
+</LinearLayout>
