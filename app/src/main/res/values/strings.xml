@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">تطبيق أي مكان</string>
+    <string name="action_settings">الإعدادات</string>
+    <string name="btlogin">تسجيل دخول</string>
+    <string name="btregister">تسجيل معرف جديد</string>
+    <string name="TVUserName">إسم المعرف:</string>
+    <string name="TVUserPassword">كلمة المرور:</string>
+    <string name="TVUserPasswordConfirmed">تأكيد كلمة المرور:</string>
+    <string name="TVUserGroup">نوع المعرف:</string>
+    <string name="TVLocName">إسم الموقع:</string>
+    <string name="TVLocLat">خط العرض:</string>
+    <string name="TVLocLng">خط الطول:</string>
+    <string name="TVLocTel">رقم الهاتف:</string>
+    <string name="TVLocCatId">فئة الموقع:</string>
+    <string name="TVLocIsPub">مشاركة الموقع:</string>
+    <string name="emptystring" />
+    <color name="YellowColortxt">#fffc1e</color>
+    <color name="GreenBack">#06ff0d</color>
+    <color name="StatusColor">#FFFF3727</color>
+    <string name="btAddNewLoc">حفظ الموقع</string>
+</resources>
